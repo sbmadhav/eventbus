@@ -11,6 +11,7 @@
  *		eventBus.remove( 'myEvent1',function(){console.log('hi')}); 
  *	// Or 
  *		eventBus.remove( 'myEvent1');
+ *  License (MIT)
 */ 
 ( function ( NS ){
 
