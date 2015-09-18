@@ -84,7 +84,11 @@
 
 		};
 
-		///Trigger method publishes the event, with a second optional data argument.
+		/** Trigger method publishes the event, with a second optional data argument.
+		* 	@function trigger
+ 		* 	@param {string} eventName , [{object} data]
+ 		* 	@return {boolean} state to indicate the success or failure of the add / subscribe event.
+		*/
 		this.trigger = function ( eventName , data ) {
 			if ( topics[ eventName ] ) {
 
