@@ -59,7 +59,8 @@
 				if ( arguments.length === 1 ) {
 					//TODO: Usage of delete needs to reconsidered
 					delete topics[ eventName ];
-					return 'Event ' + eventName + ' has been successfuly removed';
+					//console.log ( 'Event ' + eventName + ' has been successfuly removed' );
+					 return true;
 
 				} else {
 					//TODO: Order is O[N(pow2)]. Needs to be made simpler
