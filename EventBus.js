@@ -27,9 +27,8 @@
  		* 	@return {boolean} state to indicate the success or failure of the add / subscribe event.
 		*/
 		this.add = function ( eventName ) {
-			topics[ eventName ] = topics[ eventName ] || [];
 			if ( eventName && typeof eventName === 'string' && arguments.length > 1 ) {
-
+				topics[ eventName ] = topics[ eventName ] || [];
 				for ( var i = 1; i < arguments.length; i++ ) {
 				
 					topics[ eventName ].push( arguments[i] );
